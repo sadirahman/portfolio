@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shadikur Rahman</title>
+  <meta name="description" content="Portfolio of Shadikur Rahman — Adjunct Faculty & ML/NLP Researcher." />
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Site styles -->
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-accent">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home" aria-label="Home">S A D I</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="Teaching.html">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="CV/PhD_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li> -->
+          <!-- <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li> -->
+          <!-- <li class="nav-item"><a class="nav-link" href="#education">Education</a></li> -->
+          <!-- <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="btn btn-sm btn-light">
+              <i class="bi bi-moon-stars me-1" aria-hidden="true"></i><span>Dark</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero d-grid align-content-center text-white">
+    <div class="container py-5">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <span class="pill mb-3"><i class="bi bi-mortarboard" aria-hidden="true"></i> Adjunct Faculty • ML/NLP Researcher</span>
+          <h1 class="display-5 mb-3 fw-extrabold">Shadikur Rahman</h1>
+          <p class="lead mb-4">
+            I build practical AI systems for code quality, chart understanding, and real-world ML applications.
+            Seeking a <strong>PhD position</strong> and <strong>ML/NLP roles</strong>.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-accent btn-lg" href="publication.html"><i class="bi bi-journal-text me-2" aria-hidden="true"></i>See Publications</a>
+            <a class="btn btn-outline-light btn-lg" href="project.html"><i class="bi bi-cpu me-2" aria-hidden="true"></i>Featured Projects</a>
+            <a class="btn btn-light" href="CV/PhD_CV.pdf" download>
+              <i class="bi bi-download me-1" aria-hidden="true"></i> CV
+            </a>
+          </div>
+          <ul class="list-inline mt-4 social-list" aria-label="External profiles">
+            <li class="list-inline-item">
+              <a href="https://github.com/sadirahman" class="text-decoration-none text-white-50" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="bi bi-github fs-3" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/shadikur-rahman-599272176" class="text-decoration-none text-white-50" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="bi bi-linkedin fs-3" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://scholar.google.com/citations?user=ebuyiYAAAAAJ&hl=en" class="text-decoration-none text-white-50" target="_blank" rel="noopener" aria-label="Google Scholar">
+                <i class="bi bi-mortarboard fs-3" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 text-center text-lg-end">
+          <img class="avatar" src="Image/Shadikur_Rahman.jpg" alt="Portrait of Shadikur Rahman" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-body-tertiary">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">About</h2>
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <article class="card p-4 h-100">
+            <p>
+              I am an Adjunct Faculty of Information Technology at York University, Canada and a
+              Research Associate at Algoma University, where I build benchmarks and frameworks for
+              Large Language Models (LLMs), code generation, and multimodal reasoning. Previously, I worked as a Software Engineer at Samsung R&amp;D Institute Bangladesh Ltd.
+              and completed my M.Sc. in Computer Science at York University, focusing on LLM-assisted code generation based on code reviews.
+            </p>
+            <p>
+              My research bridges software engineering, NLP, and multimodal ML
+              to improve the reliability and interpretability of AI systems for developers and analysts. I design
+              benchmarks and agentic pipelines that connect language, code, and vision—advancing model
+              reasoning for chart understanding, code generation, and human–AI collaboration.
+            </p>
+            <p class="mb-0">
+              Recent projects include <em>RefactorCoderQA</em>, <em>ChartQAPro</em>, and <em>DashboardQA</em> with publications in
+              venues such as <em>ACL Findings</em>, <em>TSC</em>, <em>EMSE</em>, <em>ESEM</em>, <em>IEEE REW</em>, and <em>FLLM</em>. I am actively seeking
+              Ph.D. opportunities and research collaborations in ML, NLP, and
+              multimodal AI.
+            </p>
+          </article>
+        </div>
+        <aside class="col-lg-4">
+          <div class="card p-4 h-100">
+            <h3 class="h6 fw-bold mb-3">Research Interests</h3>
+            <ul class="mb-0">
+              <li>Large Language Models (LLMs) &amp; Code Generation</li>
+              <li>Multimodal / Vision–Language Reasoning</li>
+              <li>Chart &amp; Dashboard Question Answering</li>
+              <li>Prompting, Quantization, and Fine-Tuning</li>
+              <li>Human–AI Collaboration &amp; Agentic Frameworks</li>
+              <li>NLP for Software Engineering (code review, summarization)</li>
+              <li>Responsible &amp; Explainable AI; Evaluation &amp; Benchmarks</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Education -->
+<section id="education" class="py-5 bg-body-tertiary">
+  <div class="container">
+    <h2 class="section-title h3 mb-4">Education</h2>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="card p-3 h-100">
+          <h3 class="h6 fw-semibold mb-1">MSc in Computer Science at York University</h3>
+          <div class="text-body-secondary small">Jan 2022 – Dec 2023</div>
+          <div class="text-body-secondary small">Toronto, Canada</div>
+          <div class="text-body-secondary small">GPA: 3.70 / 4.0</div>
+          <p class="small mb-0">Thesis: Enhancing code review for improved code quality with language model-driven approaches.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card p-3 h-100">
+          <h3 class="h6 fw-semibold mb-1">BSc in Software Engineering at Daffodil International University (DIU)</h3>
+          <div class="text-body-secondary small">Jan 2015 – Dec 2018</div>
+          <div class="text-body-secondary small">Dhaka, Bangladesh</div>
+          <div class="text-body-secondary small">GPA: 3.54 / 4.0</div>
+          <p class="small mb-0">Thesis: Polynomial Topic Distribution with Topic Modeling for Generic Labeling.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Experience -->
+<section id="experience" class="py-5 bg-body-tertiary">
+  <div class="container">
+    <h2 class="section-title h3 mb-4">Experience</h2>
+    <div class="timeline">
+
+      <!-- Adjunct Faculty -->
+      <div class="d-flex mb-4">
+        <div class="t-dot" aria-hidden="true"></div>
+        <div>
+          <h3 class="h6 mb-1">Adjunct Faculty of Information Technology — York University</h3>
+          <div class="text-body-secondary small mb-2">May 2024 – Present • Toronto, Canada</div>
+          <ul class="small mb-0">
+            <li>ITEC 3020 – Web Technologies: HTML, CSS, Bootstrap, JavaScript, Node.js, and MySQL.</li>
+            <li>ITEC 3230 – Designing User Interfaces: user-centered design, prototyping, and usability evaluation.</li>
+            <li>Designing and delivering interactive lectures and hands-on coding sessions.</li>
+            <li>Guiding students in developing real-world projects and improving their problem-solving skills.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Research Associate -->
+      <div class="d-flex mb-4">
+        <div class="t-dot" aria-hidden="true"></div>
+        <div>
+          <h3 class="h6 mb-1">Research Associate — Algoma University</h3>
+          <div class="text-body-secondary small mb-2">Nov 2024 – Present • Brampton, Canada</div>
+          <ul class="small mb-0">
+            <li>Developed <em>RefactorCoderQA</em>, a benchmark for multi-domain code reasoning with LLMs.</li>
+            <li>Designed a multi-agent LLM framework (GuideLLM–SolverLLM–JudgeLLM) for structured reasoning.</li>
+            <li>Fine-tuned RefactorCoder-MoE using QLoRA on DeepSeek-Coder-7B, achieving 76.84% accuracy.</li>
+            <li>Built JudgeLLM using GPT-4 for automated accuracy and clarity evaluation.</li>
+            <li>Performed latency, ablation, and human–AI evaluation studies across SE, DS, ML, and NLP domains.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Research Assistant - York -->
+      <div class="d-flex mb-4">
+        <div class="t-dot" aria-hidden="true"></div>
+        <div>
+          <h3 class="h6 mb-1">Research Assistant — Intelligent Visualization Lab, York University</h3>
+          <div class="text-body-secondary small mb-2">Jan 2024 – Present • Toronto, Canada</div>
+          <ul class="small mb-0">
+            <li>Contributed to <em>ChartQAPro</em> and <em>DashboardQA</em> benchmarks for multimodal and GUI-based reasoning.</li>
+            <li>Curated real-world charts and dashboards with expert-authored QA pairs.</li>
+            <li>Developed evaluation pipelines for VLMs and agentic models using GPT-4o, Gemini, and Claude.</li>
+            <li>Analyzed grounding, planning, and reasoning gaps in multimodal LLM performance.</li>
+            <li>Supported dataset design, experimentation, and benchmarking for vision–language understanding.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Graduate Research Assistant -->
+      <div class="d-flex mb-4">
+        <div class="t-dot" aria-hidden="true"></div>
+        <div>
+          <h3 class="h6 mb-1">Graduate Research Assistant — York University</h3>
+          <div class="text-body-secondary small mb-2">Jan 2022 – Jan 2024 • Toronto, Canada</div>
+          <ul class="small mb-0">
+            <li>Developed an application to identify and recommend similar code reviews to improve code quality.</li>
+            <li>Fine-tuned a BERT model for code review classification (96% F1-score).</li>
+            <li>Retrieved relevant Stack Overflow data using chunking and NER for contextual insights.</li>
+            <li>Built an LLM chatbot using Llama 2 to assist developers in issue resolution.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Research Assistant - Umm Al-Qura -->
+      <div class="d-flex mb-4">
+        <div class="t-dot" aria-hidden="true"></div>
+        <div>
+          <h3 class="h6 mb-1">Research Assistant — Umm Al-Qura University</h3>
+          <div class="text-body-secondary small mb-2">Jun 2020 – Jul 2021 • Saudi Arabia (Remote)</div>
+          <ul class="small mb-0">
+            <li>Implemented a CNN-based technique to classify COVID-19 from X-ray images, comparing VGG and ResNet models.</li>
+            <li>Proposed an optimized CNN model achieving 97% accuracy in distinguishing COVID-19 cases.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Software Engineer -->
+      <div class="d-flex mb-4">
+        <div class="t-dot" aria-hidden="true"></div>
+        <div>
+          <h3 class="h6 mb-1">Software Engineer — Samsung R&amp;D Institute Bangladesh Ltd.</h3>
+          <div class="text-body-secondary small mb-2">May 2019 – Nov 2019 • Dhaka, Bangladesh</div>
+          <ul class="small mb-0">
+            <li>Analyzed code reviews from GitHub repositories to identify coding issues using Machine Learning and NLP.</li>
+            <li>Applied SVM with TF-IDF for classifying ambiguous code reviews (90% accuracy, 92% F1-score).</li>
+            <li>Developed a developer-assistance tool using Django and Django REST Framework in Python.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">Featured Research</h2>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <div class="d-flex align-items-center mb-2 gap-2">
+              <span class="badge badge-soft">LLMs</span>
+              <span class="badge badge-soft">Code Quality</span>
+            </div>
+            <h3 class="h6 fw-semibold mb-1">RefactorCoderQA</h3>
+            <p class="small text-body-secondary">Benchmark + multi-agent pipeline (Guide/Solver/Judge) for real coding tasks.</p>
+            <div class="d-flex gap-2 mt-auto">
+              <a class="btn btn-sm btn-outline-primary" href="#">README</a>
+              <a class="btn btn-sm btn-outline-secondary" href="https://github.com/sadirahman" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <div class="d-flex align-items-center mb-2 gap-2">
+              <span class="badge badge-soft">Vision</span>
+              <span class="badge badge-soft">Visualization</span>
+            </div>
+            <h3 class="h6 fw-semibold mb-1">ChartQAPro</h3>
+            <p class="small text-body-secondary">Diverse chart QA benchmark with harder questions &amp; robust eval protocols.</p>
+            <div class="d-flex gap-2 mt-auto">
+              <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2504.05506" target="_blank" rel="noopener">arXiv</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <div class="d-flex align-items-center mb-2 gap-2">
+              <span class="badge badge-soft">Agents</span>
+              <span class="badge badge-soft">GUI</span>
+            </div>
+            <h3 class="h6 fw-semibold mb-1">DashboardQA</h3>
+            <p class="small text-body-secondary">Agents for question answering on interactive dashboards.</p>
+            <div class="d-flex gap-2 mt-auto">
+              <a class="btn btn-sm btn-outline-secondary" href="#" aria-disabled="true">arXiv</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">Skills</h2>
+      <div class="row g-3">
+        <div class="col-lg-4">
+          <div class="card p-3 h-100">
+            <h3 class="h6 fw-semibold">Programming</h3>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge text-bg-light border">Python</span>
+              <span class="badge text-bg-light border">C</span>
+              <span class="badge text-bg-light border">Java</span>
+              <span class="badge text-bg-light border">SQL (PostgreSQL, MySQL)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card p-3 h-100">
+            <h3 class="h6 fw-semibold">ML / DL</h3>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge text-bg-light border">scikit-learn</span>
+              <span class="badge text-bg-light border">pandas</span>
+              <span class="badge text-bg-light border">NumPy</span>
+              <span class="badge text-bg-light border">TensorFlow</span>
+              <span class="badge text-bg-light border">PyTorch</span>
+              <span class="badge text-bg-light border">Keras</span>
+              <span class="badge text-bg-light border">OpenCV</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card p-3 h-100">
+            <h3 class="h6 fw-semibold">NLP / LLMs</h3>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge text-bg-light border">LLMs</span>
+              <span class="badge text-bg-light border">LangChain</span>
+              <span class="badge text-bg-light border">Ollama</span>
+              <span class="badge text-bg-light border">Retrieval</span>
+              <span class="badge text-bg-light border">NER</span>
+              <span class="badge text-bg-light border">LLM reasoning</span>
+              <span class="badge text-bg-light border">VLLM</span>
+              <span class="badge text-bg-light border">Quantization</span>
+              <span class="badge text-bg-light border">Fine-tuning</span>
+              <span class="badge text-bg-light border">Evaluation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-body-tertiary">
+    <div class="container">
+      <h2 class="section-title h3 mb-3">Contact</h2>
+    <p class="text-body-secondary">3052 Victor Phillip Dahdaleh Building, 4700 Keele Street Toronto, Ontario, Canada, M3J 1P3.</p>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="card p-3 h-100">
+            <div class="d-flex align-items-center mb-2"><i class="bi bi-envelope me-2" aria-hidden="true"></i><strong>Email</strong></div>
+            <a href="mailto:shadikur@yorku.ca">shadikur@yorku.ca</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3 h-100">
+            <div class="d-flex align-items-center mb-2"><i class="bi bi-telephone me-2" aria-hidden="true"></i><strong>Phone</strong></div>
+            <a href="tel:+14165626670">+1 (416) 562-6670</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span class="small">© <span id="year"></span> Shadikur Rahman</span>
+      <div class="d-flex gap-3">
+        <a href="#home" class="small text-white text-decoration-none">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle with persistence
+    const root = document.documentElement;
+    const toggleBtn = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('theme');
+    if (saved) {
+      root.setAttribute('data-bs-theme', saved);
+      updateToggleLabel(saved);
+    }
+    toggleBtn.addEventListener('click', () => {
+      const current = root.getAttribute('data-bs-theme') || 'light';
+      const next = current === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-bs-theme', next);
+      localStorage.setItem('theme', next);
+      updateToggleLabel(next);
+    });
+
+    function updateToggleLabel(theme) {
+      const icon = theme === 'dark' ? 'bi-brightness-high' : 'bi-moon-stars';
+      const text = theme === 'dark' ? 'Light' : 'Dark';
+      toggleBtn.innerHTML = `<i class="bi ${icon} me-1" aria-hidden="true"></i><span>${text}</span>`;
+      toggleBtn.className = `btn btn-sm ${theme === 'dark' ? 'btn-secondary' : 'btn-light'}`;
+    }
+  </script>
+</body>
+</html>

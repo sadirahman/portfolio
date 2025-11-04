@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shadikur Rahman — Portfolio</title>
+  <meta name="description" content="Portfolio of Shadikur Rahman — Adjunct Faculty & ML/NLP Researcher." />
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Site styles -->
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-accent">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home" aria-label="Home">S A D I</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="Teaching.html">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="CV/PhD_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="btn btn-sm btn-light">
+              <i class="bi bi-moon-stars me-1" aria-hidden="true"></i><span>Dark</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<br><br>
+<!-- Research Projects -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="section-title h3 mb-4">Research Projects</h2>
+
+    <div class="row gy-4">
+
+      <!-- Project 1: RefactorCoderQA -->
+      <div class="col-md-12">
+        <div class="card border-0 shadow-sm p-3 d-flex flex-md-row align-items-start gap-3">
+          <img src="Image/RefactorQA.jpg" alt="RefactorCoderQA diagram" class="proj-thumb" loading="lazy"
+               class="img-fluid rounded" style="max-width:180px;">
+          <div>
+            <h3 class="h6 fw-bold mb-2 text-primary">
+              RefactorCoderQA: Benchmarking LLMs for Multi-Domain Coding Question Solutions in Cloud and Edge Deployment
+            </h3>
+            <p class="small mb-0 text-body-secondary">
+               RefactorCoderQA addresses a key challenge in software engineering, how to automatically improve and reason about
+               source code using large language models (LLMs). While existing benchmarks primarily measure code generation accuracy, 
+               they overlook the refactoring, review, and optimization steps that real developers perform during iterative coding. 
+               This project introduces a large-scale benchmark and multi-agent framework (Guide–Solver–Judge) that evaluates LLMs on
+               realistic software maintenance and improvement tasks across multiple domains, including software engineering, data science,
+               and NLP. It investigates how LLMs trade off between accuracy, clarity, and execution efficiency when deployed across both cloud
+               and edge environments, ultimately aiming to make AI-driven code refinement more transparent, explainable, and practical for
+               real-world development workflows
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Project 4: Review2Code -->
+      <div class="col-md-12">
+        <div class="card border-0 shadow-sm p-3 d-flex flex-md-row align-items-start gap-3">
+          <img src="Image/Review2code.png" alt="Review2Code pipeline" class="proj-thumb" loading="lazy"
+               class="img-fluid rounded" style="max-width:180px;">
+          <div>
+            <h3 class="h6 fw-bold mb-2 text-primary">
+              Review2Code: Benchmarking LLM-Driven Code Generation from Code Review
+            </h3>
+            <p class="small mb-0 text-body-secondary">
+               Review2Code focuses on automating the transformation of human review feedback into corrected and optimized code.
+               It benchmarks instruction-tuned LLMs on their ability to interpret reviewer comments, apply actionable fixes, and
+               maintain logical and syntactic fidelity. The framework promotes intelligent code maintenance and demonstrates how
+               LLMs can act as assistants in real-world software review and repair workflows.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+            <!-- Project 8: UI2Code-Real -->
+      <div class="col-md-12">
+        <div class="card border-0 shadow-sm p-3 d-flex flex-md-row align-items-start gap-3">
+          <img src="Image/UI2code.png" alt="UI2Code-Real benchmark overview" class="proj-thumb" loading="lazy"
+               class="img-fluid rounded" style="max-width:180px;">
+          <div>
+            <h3 class="h6 fw-bold mb-2 text-primary">
+              UI2Code-Real: Bridging Visual Web Design and Front-End Code Generation from UI scratch 
+            </h3>
+            <p class="small mb-0 text-body-secondary">
+             UI2Code-Real develops a realistic design-to-code benchmark built from over 100 authentic student web projects
+             created with HTML, CSS, Bootstrap, and Node.js. Unlike synthetic datasets, it captures rendered interfaces and
+             their underlying code to test how multimodal LLMs like GPT-4o, Claude 3.5, and Gemini 1.5 Pro translate visuals
+             into semantically rich, accurate code. The project supports educational research and next-generation UI-to-code 
+             automation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: ChartQAPro -->
+      <div class="col-md-12">
+        <div class="card border-0 shadow-sm p-3 d-flex flex-md-row align-items-start gap-3">
+          <img src="Image/ChartQApro.jpg" alt="ChartQAPro diagram" class="proj-thumb" loading="lazy"
+               class="img-fluid rounded" style="max-width:180px;">
+          <div>
+            <h3 class="h6 fw-bold mb-2 text-primary">
+              ChartQAPro: A more diverse and challenging benchmark for chart question answering
+            </h3>
+            <p class="small mb-0 text-body-secondary">
+              ChartQAPro presents a comprehensive benchmark that evaluates multimodal reasoning and visual understanding in large vision–language models.
+              It expands existing chart QA datasets with more diverse chart types, complex question categories, and reasoning levels. The project enables 
+              fine-grained assessment of data comprehension, grounding, and numerical reasoning, advancing robust multimodal analytics for real-world data visualization.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: DashboardQA -->
+      <div class="col-md-12">
+        <div class="card border-0 shadow-sm p-3 d-flex flex-md-row align-items-start gap-3">
+          <img src="Image/DashboardQa.jpg" alt="DashboardQA figure" class="proj-thumb" loading="lazy"
+               class="img-fluid rounded" style="max-width:180px;">
+          <div>
+            <h3 class="h6 fw-bold mb-2 text-primary">
+              DashboardQA: Benchmarking Multimodal Agents for Question Answering on Interactive Dashboards
+            </h3>
+            <p class="small mb-0 text-body-secondary">
+              DashboardQA explores how multimodal and agentic LLMs reason over interactive dashboards. It measures their ability
+              to interpret charts, widgets, and textual components while generating coherent insights through multi-step reasoning.
+              By combining GUI understanding, computer vision, and natural language processing, the project moves toward interactive,
+              explainable, and intelligent data exploration agents.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+
+<br><br>
+
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span class="small">© <span id="year"></span> Shadikur Rahman</span>
+      <div class="d-flex gap-3">
+        <a href="#home" class="small text-white text-decoration-none">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle with persistence
+    const root = document.documentElement;
+    const toggleBtn = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('theme');
+    if (saved) {
+      root.setAttribute('data-bs-theme', saved);
+      updateToggleLabel(saved);
+    }
+    toggleBtn.addEventListener('click', () => {
+      const current = root.getAttribute('data-bs-theme') || 'light';
+      const next = current === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-bs-theme', next);
+      localStorage.setItem('theme', next);
+      updateToggleLabel(next);
+    });
+
+    function updateToggleLabel(theme) {
+      const icon = theme === 'dark' ? 'bi-brightness-high' : 'bi-moon-stars';
+      const text = theme === 'dark' ? 'Light' : 'Dark';
+      toggleBtn.innerHTML = `<i class="bi ${icon} me-1" aria-hidden="true"></i><span>${text}</span>`;
+      toggleBtn.className = `btn btn-sm ${theme === 'dark' ? 'btn-secondary' : 'btn-light'}`;
+    }
+  </script>
+</body>
+</html>

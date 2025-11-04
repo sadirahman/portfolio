@@ -1,0 +1,142 @@
+/* ====== Theme tokens ====== */
+:root {
+  --accent: #2563eb;
+  --brand-dark: #1e3a8a;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* ====== Navbar ====== */
+.bg-accent { background: var(--accent) !important; }
+.navbar .nav-link { color: #fff !important; opacity: .95; }
+.navbar .nav-link:hover,
+.navbar .nav-link.active { color: #e2e8f0 !important; }
+
+/* ====== Hero ====== */
+.hero {
+  min-height: 82vh;
+  background: linear-gradient(180deg, var(--accent) 0%, var(--brand-dark) 100%);
+}
+.hero h1.fw-extrabold { font-weight: 800; letter-spacing: .3px; }
+.pill {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .4rem .8rem; border-radius: 2rem; font-size: .9rem;
+  background: rgba(255,255,255,.22); color: #fff;
+}
+.btn-accent { background: #fff; color: var(--accent); border: 0; }
+.btn-accent:hover { background: #f1f5f9; color: #0b3bb3; }
+
+/* ====== Cards/Sections ====== */
+.section-title { font-weight: 700; letter-spacing: .2px; color: var(--brand-dark); }
+.card { background: var(--bs-body-bg); border: 1px solid var(--bs-border-color); }
+.card:hover { border-color: var(--accent); }
+.badge-soft { background: #e0e7ff; color: var(--brand-dark); border: 0; }
+
+/* ====== Timeline ====== */
+.timeline { position: relative; padding-left: 1.25rem; }
+.timeline::before {
+  content: ""; position: absolute; left: .4rem; top: .25rem; bottom: .25rem; width: 2px; background: var(--accent);
+}
+.t-dot { width: .75rem; height: .75rem; background: var(--accent); border-radius: 50%; margin-right: .75rem; flex: 0 0 auto; }
+
+/* ====== Avatar ====== */
+.avatar { width: 250px; height: 250px; border-radius: 100%; object-fit: cover; border: 3px solid #fff; }
+
+/* ====== Footer ====== */
+.footer { background: var(--brand-dark); color: #f9fafb; }
+
+/* ====== Social list ====== */
+.social-list a:hover { opacity: .9; }
+
+/* ====== Publication buttons ====== */
+/* Primary publication button (for "Paper") */
+.pub-btn{
+  min-width: 90px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+  white-space: nowrap;
+}
+
+/* Smaller secondary button (for GitHub) */
+.pub-btn-sm{
+  min-width: 120px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .55rem;
+  padding: 0 .75rem;
+  white-space: nowrap;
+}
+
+/* Optional: darker outline style for GitHub */
+.btn-outline-dark-gh{
+  color: var(--bs-body-color);
+  border-color: var(--bs-border-color);
+  background: transparent;
+}
+.btn-outline-dark-gh:hover{
+  color: #fff;
+  background: var(--brand-dark);
+  border-color: var(--brand-dark);
+}
+
+/* Full-width stack on small screens */
+@media (max-width: 576px){
+  .pub-btn,
+  .pub-btn-sm{ width: 100%; }
+}
+
+/* Uniform project thumbnails */
+.proj-thumb{
+  width: 200px;          /* set the exact width you want */
+  height: 120px;         /* set the exact height you want */
+  object-fit: cover;     /* crop to fill without distortion */
+  border-radius: .5rem;  /* match your card rounding */
+  border: 1px solid rgba(0,0,0,.08);
+  flex: 0 0 auto;        /* keep fixed size inside flex rows */
+}
+
+/* Optional: smaller screens */
+@media (max-width: 576px){
+  .proj-thumb{
+    width: 160px;
+    height: 100px;
+  }
+}
+
+/* Teaching history styling */
+.teach-list .list-group-item{
+  padding: .85rem 1rem;
+}
+.badge-accent{
+  background: rgba(37,99,235,.12);   /* subtle blue to match your theme */
+  color: #2563eb;
+  border-radius: 999px;
+  padding: .35rem .75rem;
+  font-weight: 600;
+}
+[data-bs-theme="dark"] .badge-accent{
+  background: rgba(99,102,241,.25);
+  color: #c7d2fe;
+}
+
+
+
+/* ====== Dark mode tweaks ====== */
+[data-bs-theme="dark"] .section-title { color: #c7d2fe; }
+[data-bs-theme="dark"] .badge-soft { background: rgba(99,102,241,.18); color: #c7d2fe; }
+[data-bs-theme="dark"] .navbar.bg-accent { background: #0d1b3d !important; }
+[data-bs-theme="dark"] .hero {
+  background:
+    radial-gradient(60% 60% at 30% 20%, rgba(37,99,235,.35), transparent 60%),
+    linear-gradient(180deg, #0b1020 0%, #0b1126 100%);
+}
+[data-bs-theme="dark"] .btn-accent { background: var(--accent); color: #fff; }
+[data-bs-theme="dark"] .btn-accent:hover { background: #1f4cd6; }
